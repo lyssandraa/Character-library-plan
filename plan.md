@@ -11,11 +11,14 @@ Update account
 Delete account
 Message change on login
 Create character
+Assign avatar to character
 Update character
-Add character to favourite
+Delete character
 Characters display
 Character page / module
-Delete character
+Add character to favourite
+Display all favourites
+Delete from favourites
 
 What do we need for each feature:
 
@@ -36,6 +39,8 @@ Basic UI
       Delete character
       Display all characters
       Display each character
+    Avatar container
+      Assign avatar to character
     Favoutire characters container
       Add character to favourite
       Display favourite characters
@@ -181,6 +186,25 @@ Character container
       FE:
         Request(GET)
         Click event?
+
+Avatar container
+
+    General:
+
+      BE:
+        Fetch data from API
+        Extract relevant data
+
+      FE:
+        Fetch data from BE
+
+    Assign avatar:
+
+      BE:
+        Association?
+
+      FE:
+      ??
 
 Favourite characters container
 
