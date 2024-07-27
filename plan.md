@@ -1,6 +1,6 @@
 What do we want to achieve?
 
-We want to make a character library app in which authors can store information about their characters.
+We want to make a character library app (Character Vault) in which authors can store information about their characters.
 
 What features do we want in the app?
 
