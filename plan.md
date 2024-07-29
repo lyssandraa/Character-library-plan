@@ -275,3 +275,4 @@ Admin role
 Public vs private characters
 Cookies
 Persistent login
+Different collections
