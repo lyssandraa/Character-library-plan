@@ -52,7 +52,10 @@ User container
 
       BE:
         CORS enabled
-        User model
+        User model:
+          Character name
+          Book
+          Description
 
       FE:
         Mode cors
@@ -279,3 +282,23 @@ Different collections
 
 External API:
 https://www.dicebear.com/how-to-use/http-api/
+
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+const port = 3000;
+
+app.get("/getImage", async (req, res) => {
+const image = await fetch("https://api.dicebear.com/9.x/pixel-art/svg?seed=Dave+Smith");
+const data = await image.url;
+console.log(data);
+res.status(201).json(data);
+});
+app.listen(port, () => {
+console.log(`Server is listening on port ${port}`);
+});
