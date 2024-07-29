@@ -276,3 +276,6 @@ Public vs private characters
 Cookies
 Persistent login
 Different collections
+
+External API:
+https://www.dicebear.com/how-to-use/http-api/
